@@ -4,7 +4,8 @@
   "description": "Jobify is a simple job board for sites.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon"
   },
   "keywords": [
     "jobify",
@@ -13,8 +14,13 @@
   "author": "Francisco Chaves",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "ejs": "^2.6.1",
     "express": "^4.17.1",
+    "morgan": "^1.9.1",
     "sqlite": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
