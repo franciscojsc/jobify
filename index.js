@@ -2,11 +2,14 @@ const express = require('express');
 const app = express();
 
 app.set('view engine', 'ejs');
+app.use(express.static('public'));
 
 app.get('/', (request, response) => {
-	response.render('home', {
-		date: new Date()
-	});
+	response.render('home');
+});
+
+app.get('/vaga', (request, response) => {
+	response.render('vaga');
 });
 
 app.listen(3000, (err) => {
