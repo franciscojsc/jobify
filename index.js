@@ -138,11 +138,11 @@ const init = async () => {
 	await db.run(
 		'create table if not exists vagas (id INTEGER PRIMARY KEY, categoria INTEGER, titulo TEXT, descricao TEXT);'
 	);
-	//const categoria = 'Engineering team';
-	//await db.run(`insert  into categorias(categoria) values('${categoria}');`);
-	// const titulo = 'Fullstack Develop (Remote)';
-	// const descricao = 'Vaga para Fulstack develop que fez o Fullstack Lab';
-	// await db.run(`insert into vagas (categoria, titulo, descricao)	values (1, '${titulo}', '${descricao}');`);
+	const categoria = 'Engineering team';
+	await db.run(`insert  into categorias(categoria) values('${categoria}');`);
+	const titulo = 'Fullstack Develop (Remote)';
+	const descricao = 'Vaga para Fulstack develop que fez o Fullstack Lab';
+	await db.run(`insert into vagas (categoria, titulo, descricao)	values (1, '${titulo}', '${descricao}');`);
 };
 
 init();
