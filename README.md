@@ -6,7 +6,7 @@ Jobify is a simple job board for sites - Developed during the FullStack Lab 2 of
 
 ![Jobify](screenshot-1.png "Application Jobify")
 
-## Pré-requisitos :computer:
+## Prerequisites :computer:
 
 [NodeJS](https://nodejs.org/en/)
 
